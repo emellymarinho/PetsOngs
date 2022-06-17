@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Crie o perfil do Pet</title>
+
+    <!-- Required meta tags -->
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+    <link rel="stylesheet" href="CSS/material-dashboard.css">
+  
+
+<style>
+	input::-webkit-outer-spin-button,
+	input::-webkit-inner-spin-button {
+	  -webkit-appearance: none;
+	  margin: 0;
+	}
+</style>
+
+</head>
+
+<body>
+
+
+    <main>
+        <form id="form3" method="POST" action="" enctype="multipart/form-data"  class="p-3 bg-dark text-white fixed-top">
+
+            <fieldset id="f1">
+                <h2></h2>
+
+                <legend> Adicione as informações</legend>
+
+
+                <div>
+                    <label class="lb1"> Nome: </label>
+                    <input class="cls" dir="ltr" type="text" name="dog_name" autofocus required>
+                </div>
+
+                <div>
+                    <label class="lb1"> Genero: </label>
+                    <select dir="ltr" class="cls" name="gender" required>
+                        <option>Male</option>
+                        <option>Female</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="lb1"> *Collection area: </label>
+                    <select dir="ltr" class="cls" name="area" required>
+                        <option>North</option>
+                        <option>Center</option>
+                        <option>South</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="lb1"> Cidade: </label>
+                    <input class="cls" dir="ltr" type="text" name="city" required>
+                </div>
+
+                <div>
+                    <label class="lb1"> Tipo/ Race: </label>
+                    <input class="cls" dir="ltr" type="text" name="type" required>
+                </div>
+
+
+                <div>
+                    <label class="lb1" id="imgl"> Descrição </label>
+                    <textarea class="cls" dir="ltr" cols="40" name="description" rows="3" maxlength="500"
+                        placeholder="Such as: hobbies, behavior, size, color, affection for people"></textarea>
+                </div>
+
+                <div>
+                     <label class="lb1"> Foto 1: </label>
+                    <input class="cls" id="file" dir="ltr" type="file" name="files" required>
+                </div>
+
+                <div>
+                    <label class="lb1"> Foto 2: </label>
+                    <input class="cls" id="file" dir="ltr" type="file" name="img2">
+                </div>
+
+                <div>
+                    <label class="lb1"> Foto 3: </label>
+                    <input class="cls" id="file" dir="ltr" type="file" name="img3">
+                </div>
+
+                <br>
+
+                <p id="must"><b>*Required field</b></p>
+                <br>
+
+				<input class="btn btn-primary" type="submit" value="Create a profile">
+
+
+            </fieldset>
+        </form>
+
+
+    </main>
+
+    <br>
+    <br>
+
+    <footer>
+        
+    </footer>
+
+</body>
+
+</html>
+
+

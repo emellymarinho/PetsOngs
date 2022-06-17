@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Procurar um pet para adotar</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+    <link rel="stylesheet" href="CSS/material-dashboard.css">
+
+</head>
+
+<body>
+
+<div dir="rtl" class="topnav" id="myTopnav">
+</div>
+
+<div style="text-align:center">
+<br>
+<h2>Procurar Pet</h2>
+<br>
+<form action="/favorites/add_meeting" method="post">
+    <br>
+    <label for="place">Place:</label><br>
+    <input type="text" id="place" name="place"><br>
+    <br>
+    <label for="place">Dog ID:</label><br>
+    <input type="text" id="dog" name="dog" value="" readonly><br><br>
+    <br>
+    <input type="submit" value="Submit">
+</form>
+</div>
+
+<script>
+var url = window.location.href;
+document.getElementById("dog").value = url.substring(url.lastIndexOf('dog=')+4);
+</script>
+</body>
+</html>

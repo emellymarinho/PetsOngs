@@ -1,0 +1,245 @@
+<!-- Quem quiser testar uma nova paginam pode começar por aqui. -->
+<!-- Se der alguma coisa é só deletar, não vai comprometer o projeto.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro ONG1</title>
+</head>
+<body>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+    <link rel="stylesheet" href="CSS/bootstrap-icons.css">
+    <link rel="stylesheet" href="CSS/heroes.css">
+    <link rel="stylesheet" href="CSS/headers.css">  
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      body {
+            
+            background: url("img/back.png") no-repeat center center fixed;
+            background-size: cover;
+            height: 100%;
+        }
+    </style>
+
+    
+</body>
+
+<header class="p-3 bg-dark text-white fixed-top">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <a class=" bi-heart-fill btn btn-warning " 
+          href=""> ONG AMORE</a>
+            <a class="bi-house-door btn btn-outline-warning"
+            href="home.html">Home</a>
+
+            <a class="bi-person btn btn-outline-danger"
+            href="perfil.html">Perfil</a>
+            <a class="bi-shop btn btn-outline-primary"
+            href="loja.html"> Lojinha</a>
+          <a class="bi-cash-coin btn btn-outline-success"
+          href="doacoes.html"> Seja um doador</a>
+          <a class="bi-info btn btn-outline-info"
+      href="sobre.html">Sobre</a>
+          <div class="col-sm">
+
+        </div>      
+        </ul>
+
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+          <input type="search" class=" form-control form-control-dark" placeholder="Search..." aria-label="Search">
+        </form>
+
+        <div class="text-end">    
+                <a class=" btn btn-outline-light me-2"
+                    href="index.html">Entrar</a>
+                    <a class="btn btn-outline-info me-2"
+                    href="novoUsuario.html">Cadastro</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+<div class="h-100 row align-items-lg-center" style="width: 75%;" >
+    <div class="conteiner">
+
+        <div class="row">
+            <div class="col-sm"></div>
+            <div class="col-sm-8">
+                <div class="card border-primary bg-dark shadow-lg">
+                    <div class="card-header bg-primary text-white ">
+                        <h5>Cadastro de uma ONG</h5>
+
+                    </div>
+                    <div class="card-body text-white shadow-lg">
+                        <form action="main.html" method="POST">
+                            <div class="row">
+                                <div class="col-sm">
+
+                                    <div class="form-group">
+                                        <label for="cnpjOng">CNPJ da ONG</label>
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <div class="input-group-text">
+                                                    <i class="bi-house-door"></i>    
+                                                </div>
+                                            </div>
+
+                                            <input type="email" class="form-control" id="cnpjOng" 
+                                        placeholder="Digite o CNPJ da ONG" required>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <div class="col-sm">
+                                    <div class="form-group">
+                                        <label for="cpfFund">Digite o CPF do fundador</label>
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <div class="input-group-text">
+                                                    <i class="bi-person-fill"></i>    
+                                                </div>
+                                            </div>
+
+                                            <input type="email" class="form-control" id="cpfFund" 
+                                        placeholder="Digite o CPF do fundador da ONG" required>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="nomeUsuario">Nome</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">
+                                            <i class="bi-person"></i>
+                                        </div>
+                                    </div>
+
+                                    <input type="text" class="form-control" id="nomeUsuario" 
+                                placeholder="Digite o nome" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm">
+
+                                    <div class="form-group">
+                                        <label for="mailUsuario">E-mail da ONG</label>
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <div class="input-group-text">
+                                                    <i class="bi-at"></i>    
+                                                </div>
+                                            </div>
+
+                                            <input type="email" class="form-control" id="mailUsuario" 
+                                        placeholder="Digite seu email" required>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <div class="col-sm">
+                                    <div class="form-group">
+                                        <label for="mail2Usuario">Repita o e-mail da ONG</label>
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <div class="input-group-text">
+                                                    <i class="bi-at"></i>    
+                                                </div>
+                                            </div>
+
+                                            <input type="email" class="form-control" id="mail2lUsuario" 
+                                        placeholder="Repita seu email" required>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm">
+
+                                    <div class="form-group">
+                                        <label for="senhaUsuario">Senha</label>
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <div class="input-group-text">
+                                                    <i class="bi-key"></i>    
+                                                </div>
+                                            </div>
+
+                                            <input type="password" class="form-control" id="senhaUsuario" 
+                                        placeholder="Digite sua senha" required>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <div class="col-sm">
+                                    <div class="form-group">
+                                        <label for="senha2Usuario">Repita a senha</label>
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <div class="input-group-text">
+                                                    <i class="bi-key-fill"></i>    
+                                                </div>
+                                            </div>
+
+                                            <input type="password" class="form-control" id="senha2lUsuario" 
+                                        placeholder="Repita sua senha" required>
+                                        
+                                        </div>
+                                    </div>
+                                    <br>
+
+                                </div>
+                                <div class="row">
+                                   
+                                    <div class="alert alert-danger" role="alert">
+                                        Vamos analisar os seus dados e retornaremos o contato por e-mail.
+                                      </div>
+                                     <div class="col-sm- text-center">
+                                        <button type="submit" class="btn btn-outline-primary">Cadastrar ONG</button>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </form>
+                     
+                    </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-sm"></div>
+
+        </div>
+
+
+    </div>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ONG AMORE - Entrar</title>
+        <link rel="stylesheet" href="CSS/bootstrap.css">
+        <link rel="stylesheet" href="CSS/bootstrap-icons.css">
+
+        <style>
+            html{
+                height: 100%;
+
+            }
+            
+        body {
+            
+            background: url("img/back.png") no-repeat center center fixed;
+            background-size: cover;
+            height: 30%;
+            overflow: hidden; 
+            
+         
+ 
+        }
+    </style>
+    </head>
+    <body>
+        <header class="p-3 bg-dark text-white fixed-top">
+            <div class="container">
+              <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <a class=" bi-heart-fill btn btn-warning " 
+                    href=""> ONG AMORE</a>
+                    <a class="bi-house-door btn btn-outline-warning"
+                    href="home.html">Home</a>
+                    <a class="bi-person btn btn-outline-danger"
+                    href="perfil.html">Perfil</a>
+                   <a class="bi-shop btn btn-outline-primary"
+             href="loja.html"> Lojinha</a>
+                  <a class="bi-cash-coin btn btn-outline-success"
+                  href="doacoes.html"> Seja um doador</a>
+                  <a class="bi-info btn btn-outline-info"
+              href="sobre.html">Sobre</a>
+                  <div class="col-sm">
+    
+                </div>      
+                </ul>
+        
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+                  <input type="search" class=" form-control form-control-dark" placeholder="Search..." aria-label="Search">
+                </form>
+        
+                <div class="text-end">    
+                        <a class=" btn btn-outline-light me-2"
+                            href="index.html">Entrar</a>
+                            <a class="btn btn-outline-info me-2"
+                            href="novoUsuario.html">Cadastro</a>
+                </div>
+              </div>
+            </div>
+          </header>
+        <div class="h-100 row align-items-lg-center">
+            <div class="conteiner">
+
+                <div class="row">
+                    <div class="col-sm"></div>
+                    <div class="col-sm-4">
+                        <div class="card bg-dark ">
+                            <div class="card bg-transparent shadow-lg" style="align-items:
+                                center;">
+                                <img style="width: 100%;" src="img/dog2.jpg"
+                                    alt="Agenda de Contatos">
+                            </div>
+                            <div class="card-body">
+                                <form id=login method="post" action="main.html">
+                                    <div class="form-group text-white shadow">
+                                        <label for="mailUsuario">E-mail</label>
+                                        <input type="email" class="form-control"
+                                            id="mailUsuario" placeholder="Digite seu e-mail">
+                                    </div>
+                                    <div class="form-group text-white shadow">
+                                        <label for="senhaUsuario">Senha</label>
+                                        <input type="password"
+                                            class="form-control"
+                                            id="senhaUsuario"
+                                            placeholder="Digite sua senha">
+                                            <br>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm d-grid">
+                                            <a class="btn btn-outline-primary"
+                                                href="Principal.html">Entrar</a>
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                            <div class="card-footer">
+                                <div class="conteiner">
+                                    <div class="row">
+                                        <div class="col-sm d-grid">
+                                            <a class="btn btn-outline-success"
+                                                href="novoUsuario.html">Não sou
+                                                cadastrado</a>
+                                        </div>
+                                        <div class="col-sm d-grid ">
+                                            <button id="esqueciSenha" class="btn
+                                                btn-outline-warning">Esqueci a senha</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="col-sm"></div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+    </body>
+</html>
